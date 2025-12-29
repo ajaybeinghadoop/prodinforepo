@@ -1,0 +1,43 @@
+{
+	"name": "CopyBlobPipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "CopyFromInputToOutput",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "BinarySource"
+					},
+					"sink": {
+						"type": "BinarySink"
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "InputBlobDataset",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "OutputBlobDataset",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2025-12-29T17:33:24Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

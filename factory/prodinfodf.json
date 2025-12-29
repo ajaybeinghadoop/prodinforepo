@@ -1,0 +1,9 @@
+{
+	"name": "prodinfodf",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "117e1ded-05df-4258-84ed-4598ab2a0db4",
+		"tenantId": "fdea498c-7084-411b-bbe3-7a107c7ad587"
+	}
+}
