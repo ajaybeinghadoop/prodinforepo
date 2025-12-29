@@ -1,0 +1,80 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "MW-NIFTY-50-05-Dec-2025.csv",
+				"container": "demo"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SYMBOL \n",
+				"type": "String"
+			},
+			{
+				"name": "OPEN \n",
+				"type": "String"
+			},
+			{
+				"name": "HIGH \n",
+				"type": "String"
+			},
+			{
+				"name": "LOW \n",
+				"type": "String"
+			},
+			{
+				"name": "PREV. CLOSE \n",
+				"type": "String"
+			},
+			{
+				"name": "LTP \n",
+				"type": "String"
+			},
+			{
+				"name": "INDICATIVE CLOSE \n",
+				"type": "String"
+			},
+			{
+				"name": "CHNG \n",
+				"type": "String"
+			},
+			{
+				"name": "%CHNG \n",
+				"type": "String"
+			},
+			{
+				"name": "VOLUME \n(shares)",
+				"type": "String"
+			},
+			{
+				"name": "VALUE \n (₹ Crores)",
+				"type": "String"
+			},
+			{
+				"name": "52W H \n",
+				"type": "String"
+			},
+			{
+				"name": "52W L \n",
+				"type": "String"
+			},
+			{
+				"name": "30 D   %CHNG \n",
+				"type": "String"
+			}
+		]
+	}
+}
